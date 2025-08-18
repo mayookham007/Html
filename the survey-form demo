@@ -1,0 +1,35 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+survey-form
+</title>
+</head>
+<body>
+<h1 id="title"> survey
+</h1><Hr>
+ <link rel="stylesheet" href="styles.css" />
+<p id="description">please enter details</p>
+<form id="survey-form">
+<label id="name-label">name: <input id="name" type=text required placeholder="your name"></label><br>
+<label id=email-label >email: <input id=email type=email required placeholder="your email id"></label><br>
+<label id="number-label">contact number: <input id=number type=number min=1 max=10 required placeholder="0000000000"></label><br>
+choose your xyz: 
+<select id=dropdown>
+ <option>x</option>  
+   <option>y</option>   
+ <option>z</option> </select>which one do you prefer
+<input type=radio value=1 name=preferences>x
+<input type=radio value=2 name=preferences>y<br><br>
+what are your xyz:<br>
+<input type=checkbox value=option1>option1
+<input type=checkbox value=option2>option2
+<br><br>suggestion ___:<br>
+<textarea>"i suggest..." </textarea>
+<input type=submit id="submit">
+</body>
+</html>
