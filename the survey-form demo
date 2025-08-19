@@ -1,35 +1,56 @@
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
-<title>
-survey-form
-</title>
+  <style>
+    label {
+      display: block;         
+      margin-bottom: 15px;    
+    }
+    select, textarea, input[type="submit"] {
+      display: block;         
+      margin-top: 8px;        
+      margin-bottom: 15px;    
+    }
+  </style>
+  <title>survey-form</title>
 </head>
 <body>
-<h1 id="title"> survey
-</h1><Hr>
- <link rel="stylesheet" href="styles.css" />
-<p id="description">please enter details</p>
-<form id="survey-form">
-<label id="name-label">name: <input id="name" type=text required placeholder="your name"></label><br>
-<label id=email-label >email: <input id=email type=email required placeholder="your email id"></label><br>
-<label id="number-label">contact number: <input id=number type=number min=1 max=10 required placeholder="0000000000"></label><br>
-choose your xyz: 
-<select id=dropdown>
- <option>x</option>  
-   <option>y</option>   
- <option>z</option> </select>which one do you prefer
-<input type=radio value=1 name=preferences>x
-<input type=radio value=2 name=preferences>y<br><br>
-what are your xyz:<br>
-<input type=checkbox value=option1>option1
-<input type=checkbox value=option2>option2
-<br><br>suggestion ___:<br>
-<textarea>"i suggest..." </textarea>
-<input type=submit id="submit">
+  <h1 id="title">Survey</h1>
+  <hr>
+  <p id="description">Please enter details</p>
+
+  <form id="survey-form">
+    <label id="name-label">Name: 
+      <input id="name" type="text" required placeholder="Your name">
+    </label>
+
+    <label id="email-label">Email: 
+      <input id="email" type="email" required placeholder="Your email id">
+    </label>
+
+    <label id="number-label">Contact number: 
+      <input id="number" type="number" min="1" max="10" required placeholder="0000000000">
+    </label>
+
+    <label for="dropdown">Choose your xyz:</label>
+    <select id="dropdown">
+      <option>x</option>  
+      <option>y</option>   
+      <option>z</option>
+    </select>
+
+    <p>Which one do you prefer?</p>
+    <label><input type="radio" value="1" name="preferences"> x</label>
+    <label><input type="radio" value="2" name="preferences"> y</label>
+
+    <p>What are your xyz?</p>
+    <label><input type="checkbox" value="option1"> option1</label>
+    <label><input type="checkbox" value="option2"> option2</label>
+
+    <p>Suggestion ___:</p>
+    <textarea placeholder="I suggest..."></textarea>
+
+    <input type="submit" id="submit">
+  </form>
 </body>
 </html>
